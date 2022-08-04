@@ -6,6 +6,8 @@ public class BolaController : MonoBehaviour
 {
     public Vector2 speed;
     private Rigidbody2D rb;
+
+    public Vector2 resetPosition;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,5 +18,10 @@ public class BolaController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ResetBall ()
+    {
+        transform.position = new Vector3(resetPosition.x, resetPosition.y, 2);
     }
 }
