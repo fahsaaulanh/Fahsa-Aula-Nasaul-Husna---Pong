@@ -24,4 +24,9 @@ public class BolaController : MonoBehaviour
     {
         transform.position = new Vector3(resetPosition.x, resetPosition.y, 2);
     }
+
+    public void ActivatePUPseedUp(float magnitude)
+    {
+        rb.velocity *= magnitude;
+    }
 }
